@@ -38,6 +38,7 @@
         @include breakpoint-down(small){
             gap: 1rem;
             background-color: $veryPaleRed;
+            border-radius: 1.5rem 0 0 1.5rem;
             width: 106%;
             margin-bottom: 1rem;
         }

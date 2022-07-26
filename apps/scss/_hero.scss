@@ -4,8 +4,9 @@
     @include breakpoint-down(small){
         background-image: url(/images/bg-tablet-pattern.svg);
         background-repeat: no-repeat;
-        background-position: 100% 100%;
-        background-size: 100%;
+        background-position: 800% 100%;
+        background-size: 350px;
+        padding-bottom: 50px;
     }
 
     .text-container {

@@ -4,7 +4,8 @@ const header = document.querySelector(".header");
 const errorMail = document.querySelector(".error");
 const body = document.querySelector("body");
 const button = document.querySelector(".button");
-const email = document.querySelector(".email"); 
+const email = document.querySelector(".email").value;
+ 
 
 
 menuBtns.addEventListener('click', function() {
@@ -43,16 +44,14 @@ const swiper = new Swiper('.swiper-container', {
     }
   });
 
-     // Check E-mail Is Valid  
-     function checkEmail(inputText) {  
-      const mailformat = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;  
-      if(inputText.value.match(mailformat)) {  
-       return true;  
-      } else {  
-       errorMail.classList.remove('hide');  
-      }  
-     }  
-   
-     button.addEventListener("submit", (e) => {    
-      checkEmail(email);   
-     });
+  button.addEventListener('click',function(){
+    if(errorMail.classList.contains('hide')){
+      errorMail.classList.remove('hide');
+      errorMail.classList.add('active');
+    } else {
+      errorMail.classList.add('hide');
+      errorMail.classList.remove('active');
+    }
+  })
+
+

@@ -5,7 +5,6 @@
     .logo-social{
 
         width: 12.375rem;
-        // border: 2px solid red;
 
         @include breakpoint-down(medium){
             width: 8rem;
@@ -52,8 +51,6 @@
 
                 
              }
-
-            //  border: 2px solid coral;
 
              @include breakpoint-down(small){
                 margin-bottom: 1.35rem;

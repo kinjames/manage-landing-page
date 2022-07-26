@@ -16,18 +16,25 @@ body {
     font-size: $normal-font;
     background-image: url(/images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
-    background-position: 124% -20%;
-    background-repeat: no-repeat;
+    background-position: 144% -20%;
+    background-size: 62.5rem;
+
+    @include breakpoint-down(medium){
+        background-position: 160% -8%;
+        background-size: 38.75rem;
+    }
 
     @include breakpoint-down(small){
-        background-position: 100% -4%;
-        background-size: 100%;
+        background-position: 10% -3%;
+        background-size: 25rem;
     }
 
-    &.noscroll {
-        overflow: hidden;
-        background: linear-gradient(transparent,$veryDarkBlue);
-    }
+
+}
+
+.noscroll {
+    overflow: hidden;
+    background: linear-gradient(transparent,$veryDarkBlue);
 }
 
 ul {
@@ -58,7 +65,6 @@ a,a:visited,a:hover {
     width: 90rem;
     margin: 0 auto;
     padding-inline: 1.25rem;
-    // border: 2px solid red;
 
     @include breakpoint-down(large){
         width: 100%;
@@ -176,7 +182,6 @@ a,a:visited,a:hover {
 
 .image-container {
     width: 45%;
-    // border: 2px solid red;
 
     @include breakpoint-down(small){
         width: 100%;
@@ -186,11 +191,16 @@ a,a:visited,a:hover {
 
 
 .second-bg {
+    padding: 50px 0;
     @include breakpoint-up(medium){
         background-image: url(/images/bg-tablet-pattern.svg);
         background-repeat: no-repeat;
-        background-position: 100% 100%;
-        background-size: 100%;
+        background-position:  -20% 130%;
+        background-size: 500px;
+    }
+
+    @include breakpoint-down(small){
+        padding: 0;
     }
 }
 
