@@ -1,0 +1,45 @@
+.hero {
+    margin-bottom: 100px;
+
+    @include breakpoint-down(small){
+        background-image: url(/images/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: 100%;
+    }
+
+    .text-container {
+        h1 {
+            font-size: 3rem;
+            color: $darkBlue;
+            margin-bottom: 1rem;
+
+            @include breakpoint-down(medium){
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+        }
+
+        .hero-text {
+            width: 63%;
+            color: $darkGrayishBlue;
+            margin-bottom: 2rem;
+
+            @include breakpoint-down(medium){
+                width: 100%;
+            }
+
+            @include breakpoint-down(medium){
+                font-weight: 400;
+            }
+        }
+    }
+
+    .image-container {
+
+        img {
+            width: 100%;
+        }
+    }
+}

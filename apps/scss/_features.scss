@@ -1,0 +1,103 @@
+.features {
+
+    margin-bottom: 150px;
+
+    @include breakpoint-down(small){
+        gap: 2rem;
+    }
+
+
+    .stuffs {
+        @include breakpoint-down(small){
+            text-align: center;
+        }
+    }
+
+    .second {
+        font-size: 2.5rem;
+        color: $darkBlue;
+
+        @include breakpoint-down(medium){
+            font-size: $large-font;
+        }
+    }
+
+    .feature-para {
+        color: $darkGrayishBlue;
+        width: 60%;
+
+        @include breakpoint-down(medium){
+            font-size: 0.875rem;
+            width: 80%;
+        }
+    }
+
+    .feature-header {
+        gap: 1.875rem;
+
+        @include breakpoint-down(small){
+            gap: 1rem;
+            background-color: $veryPaleRed;
+            width: 106%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .feature-text {
+        margin-bottom: 2rem;
+    }
+
+    .num {
+        margin-top: 0;
+        height: 2.5rem;
+        width: 4.4375rem;
+        background-color: $brightRed;
+        color: $white;
+        font-weight: 500;
+        border-radius: 1.5rem;
+
+        @include breakpoint-down(small){
+            font-weight: 400;
+            width: 4rem;
+            height: 2rem;
+            margin-bottom: 0px;
+        }
+    }
+
+    .num-para {
+        width: 80%;
+        color: $darkGrayishBlue;
+        margin-left: 6.25rem;
+        margin-top: 0;
+
+        @include breakpoint-down(medium){
+            width: 70%;
+            font-size: 0.875rem;
+        }
+
+        @include breakpoint-down(small){
+            margin-left: 0;
+            width: 100%;
+            font-weight: 400;
+        }
+    }
+
+    .num-header {
+        color: $darkBlue;
+
+        @include breakpoint-down(medium){
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        @include breakpoint-down(small){
+            font-size: 0.9375rem;
+            font-weight: 500;
+            margin-bottom: 0px;
+        }
+    }
+
+
+
+}
+

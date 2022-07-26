@@ -1,0 +1,143 @@
+.footer {
+    background-color: $veryDarkBlue;
+    padding: 3.125rem 0;
+
+    .logo-social{
+
+        width: 12.375rem;
+        // border: 2px solid red;
+
+        @include breakpoint-down(medium){
+            width: 8rem;
+        }
+
+        @include breakpoint-down(small){
+            width: 100%;
+            margin-bottom: 1.35rem;
+            align-items: center;
+        }
+
+        .logo {
+            width: 80%;
+
+            img {
+                width: 100%;
+            }
+
+            @include breakpoint-down(small){
+                margin-bottom: 1.35rem;
+                width: 60%;
+            }
+        }
+
+        .social {
+            display: flex;
+            gap: 1rem;
+
+            @include breakpoint-down(medium){
+                gap: 0.5rem;
+            }
+
+             a {
+                svg path{
+                    transition: fill 150ms ease-in-out;
+                }
+
+                
+                
+    
+                &:hover svg path {
+                    fill: $brightRed;
+                }
+
+                
+             }
+
+            //  border: 2px solid coral;
+
+             @include breakpoint-down(small){
+                margin-bottom: 1.35rem;
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .footer-links {
+        width: 24rem;
+        
+        @include breakpoint-down(medium){
+            width: 16rem;
+        }
+
+        @include breakpoint-down(small){
+            margin-bottom: 1.35rem;
+            text-align: left;
+        }
+
+
+    }
+
+    .copyright {
+        width: 20rem;
+        padding: 0 0.5rem;
+
+        @include breakpoint-down(medium){
+            width: 18rem;
+        }
+
+        @include breakpoint-down(small){
+            width: 100%;
+            margin-bottom: 1.35rem;
+        }
+
+        form {
+
+            @include breakpoint-down(small){
+                display: flex;
+                gap: 0.5rem;
+            }
+            .email {
+                width: 12.5rem;
+                height: 2.875rem;
+                padding: 0 0.5rem;
+                border-radius: 1.5rem;
+                border: none;
+
+                @include breakpoint-down(medium){
+                    width: 10rem;
+                }
+
+                @include breakpoint-down(small){
+                    width: 14.5rem;
+                    padding: 0 1rem;
+                }
+            }
+
+            .button {
+                width: 4.375rem;
+                height: 2.875rem;
+                border-radius: 1.5rem;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                font-size: inherit;
+                background-color: $brightRed;
+                color: $white;
+
+                @include breakpoint-down(medium){
+                    width: 4rem;
+                }
+
+                @include breakpoint-down(small){
+                    width: 4.375rem;
+                }
+                
+                &:hover {
+                    background-color: hsl(12, 88%, 79%);
+                }
+            }
+        }
+
+    }
+}

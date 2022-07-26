@@ -1,0 +1,73 @@
+.test {
+    margin-bottom: 150px;
+
+    @include breakpoint-down(small){
+        width: 100%;
+        padding: 20px;
+    }
+
+    @include breakpoint-down(medium){
+        width: 100%;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1.25rem;
+
+        @include breakpoint-down(small){
+            font-size: 2rem;
+        }
+    }
+
+    .swiper-container {
+        position: relative;
+        width: 100%;
+        padding: 6rem 0;
+
+        @include breakpoint-down(small){
+            padding: 4rem 0;
+        }
+        .wrap {
+            .card {
+                position: relative;
+                width: 33.75rem;
+                height: 12.75rem;
+                padding: 55px 44px 0 44px;
+                background-color: $veryLightGray;
+                text-align: center;
+                  scroll-snap-align: center;
+
+                @include breakpoint-down(small){
+                    width: 100%;
+                    padding: 55px 0px 0;
+                }
+
+                .slider-img {
+                    position: absolute;
+                    width: 15%;
+                    top: -3.25rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    right: 0;
+                    display: block;
+
+                    @include breakpoint-down(medium){
+                        top: -1.55rem;
+                    }
+                }
+
+                .name {
+                    color: $veryDarkBlue;
+                    font-weight: 700;
+                }
+
+                .test-text {
+                    color: $darkGrayishBlue;
+                }
+            }
+        }
+    }
+
+
+}

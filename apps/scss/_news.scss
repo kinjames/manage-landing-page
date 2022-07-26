@@ -1,0 +1,31 @@
+.news {
+    background-color: $brightRed;
+    padding: 5.125rem 0;
+    background-image: url(/images/bg-simplify-section-desktop.svg),url(/images/bg-simplify-section-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 600px, 600px;
+    background-position: 14% 10%, 145% 120%;
+
+    @include breakpoint-down(small){
+        background-image: url(/images/bg-simplify-section-mobile.svg),url(/images/bg-simplify-section-mobile.svg);
+        background-size: 100px;
+        background-position:300px, 100px;
+       }
+
+    h2 {
+        color: $white;
+        font-size: 2rem;
+        width: 30%;
+
+       @include breakpoint-down(medium){
+        font-size: 1.5rem;
+       }
+
+       @include breakpoint-down(small){
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+       }
+       
+    }
+}
