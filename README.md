@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/social-media-dashboard-rgPQirCtGJ#comment-62ce0b0a92ed2b163ef47b68)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/manage-landing-page-ByF2inAJqe)
 - Live Site URL: [Github](https://kinjames.github.io/manage-landing-page/)
 
 ## My process
