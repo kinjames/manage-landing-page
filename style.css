@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 1rem;
-  background-image: url(/images/bg-tablet-pattern.svg);
+  background-image: url("images/bg-tablet-pattern.svg");
   background-repeat: no-repeat;
   background-position: 144% -20%;
   background-size: 62.5rem;
@@ -175,7 +175,7 @@ a, a:visited, a:hover {
 }
 @media (min-width: 40em) {
   .second-bg {
-    background-image: url(/images/bg-tablet-pattern.svg);
+    background-image: url("images/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-position: -20% 130%;
     background-size: 500px;
@@ -366,7 +366,7 @@ header .mobile-menu a {
 }
 @media (max-width: 39.9375em) {
   .hero {
-    background-image: url(/images/bg-tablet-pattern.svg);
+    background-image: url("images/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-position: 800% 100%;
     background-size: 350px;
@@ -580,7 +580,7 @@ header .mobile-menu a {
 }
 @media (min-width: 40em) {
   .news {
-    background-image: url(/images/bg-simplify-section-desktop.svg);
+    background-image: url("images/bg-simplify-section-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 100%;
@@ -588,7 +588,7 @@ header .mobile-menu a {
 }
 @media (max-width: 39.9375em) {
   .news {
-    background-image: url(/images/bg-simplify-section-mobile.svg);
+    background-image: url("images/bg-simplify-section-mobile.svg");
     background-size: 150px;
     background-repeat: no-repeat;
     background-position: -10% -20%;
